@@ -1,0 +1,14 @@
+.footerlinks{
+    color:aliceblue;
+    text-decoration: none !important;
+}
+    .footerlinks:hover{
+        color:black;
+    }
+#footer1{
+    background: limegreen;
+}
+
+#footer2{
+    background: darkgreen;
+}

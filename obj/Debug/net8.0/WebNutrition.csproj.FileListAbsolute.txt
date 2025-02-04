@@ -26,9 +26,9 @@ C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\staticwebass
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebNutrition.props
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebNutrition.props
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\WebNutrition.dll
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\refint\WebNutrition.dll
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\WebNutrition.pdb
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\WebNutrition.genruntimeconfig.cache
 C:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\ref\WebNutrition.dll
+c:\Users\zaval\Documents\ProyectosWeb\WebNutrition\obj\Debug\net8.0\WebNutrition.sourcelink.json

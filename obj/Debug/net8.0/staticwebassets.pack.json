@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\custom\\css\\customstylesheet.css",
+      "PackagePath": "staticwebassets\\custom\\css\\customstylesheet.css"
+    },
+    {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
