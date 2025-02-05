@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\alimentos-index.jpg",
+      "PackagePath": "staticwebassets\\imgs\\alimentos-index.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\inventario-alimentos.png",
+      "PackagePath": "staticwebassets\\imgs\\inventario-alimentos.png"
+    },
+    {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\logo.png",
       "PackagePath": "staticwebassets\\imgs\\logo.png"
     },
