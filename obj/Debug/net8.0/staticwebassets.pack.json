@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\administrador.png",
+      "PackagePath": "staticwebassets\\imgs\\administrador.png"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\alimentos-index-2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\alimentos-index-2.jpg"
+    },
+    {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\alimentos-index.jpg",
       "PackagePath": "staticwebassets\\imgs\\alimentos-index.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\estadisticas.jpg",
+      "PackagePath": "staticwebassets\\imgs\\estadisticas.jpg"
     },
     {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\inventario-alimentos.png",
@@ -27,6 +39,22 @@
     {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\logo.png",
       "PackagePath": "staticwebassets\\imgs\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\progreso.jpg",
+      "PackagePath": "staticwebassets\\imgs\\progreso.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\registrarse.jpg",
+      "PackagePath": "staticwebassets\\imgs\\registrarse.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\registro-alimentos.png",
+      "PackagePath": "staticwebassets\\imgs\\registro-alimentos.png"
+    },
+    {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\usuario.png",
+      "PackagePath": "staticwebassets\\imgs\\usuario.png"
     },
     {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\js\\site.js",

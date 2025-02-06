@@ -41,7 +41,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Ver Alimentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Iniciar Sesión</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/UserLogin">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Registrarse</a>
@@ -70,8 +70,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                     <p>
-                        <asp:LinkButton class="footerlinks" id="linkButtonAdminLogin" 
-                        runat="server">Ingresar como Admin</asp:LinkButton>
+                        <a class="footerlinks" asp-area="" asp-page="/AdminLogin">Ingresar como Admin</a>
                         &nbsp;
                         <asp:LinkButton class="footerlinks" id="linkButtonDietManagement" 
                         runat="server">Gestión de Dietas</asp:LinkButton>

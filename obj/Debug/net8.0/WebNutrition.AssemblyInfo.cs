@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebNutrition")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e01e05b5e352649325ac5367fdf9066020159440")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4cb67ac11363df4a543c6d866914f2b06b78825")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebNutrition")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebNutrition")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

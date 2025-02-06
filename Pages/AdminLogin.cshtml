@@ -1,0 +1,62 @@
+﻿@page
+@model AdminLoginModel
+@{
+    ViewData["Title"] = "Administrador";
+}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/administrador.png" width="150px" alt="imagen de usuario">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3>Ingresa, Administrador</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="ID de Administrador">
+                                    </input>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input class="form-control" type="password"
+                                     placeholder="Tu Contraseña">
+                                    </input>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-primary w-100">
+                                        Ingresar
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+            </div>    
+        </div>
+        
+
+    </div>
+</section>

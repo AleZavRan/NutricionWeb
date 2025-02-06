@@ -1,0 +1,76 @@
+@page
+@model UserLoginModel
+@{
+    ViewData["Title"] = "Iniciar Sesion";
+}
+
+
+<!--<h1>@ViewData["Title"]</h1>-->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/usuario.png" width="150px" alt="imagen de usuario">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3>Iniciar Sesión</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Usuario</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="ID de Usuario">
+                                    </input>
+                                </div>
+
+                                <label>Contraseña</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="password"
+                                     placeholder="Tu Contraseña">
+                                    </input>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-primary w-100">
+                                        Ingresar
+                                    </button>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <a asp-area="" asp-page="/SignUp">
+                                        <input type="button" 
+                                            class="btn btn-secondary w-100" value="Registrarse">
+                                        </input>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+            </div>    
+        </div>
+        
+
+    </div>
+</section>
