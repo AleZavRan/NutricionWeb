@@ -1,0 +1,225 @@
+@page
+@model AdminFoodManagementModel
+@{
+    ViewData["Title"] = "Admin Food Management";
+}
+
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Detalles de Alimento</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/food-management.jpg" width="100px" alt="imagen de usuario">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>ID de Alimento</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="number"
+                                     placeholder="ID de Alimento">
+                                    </input>
+                                </div>
+
+                                <label>Grupo Alimenticio</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Grupo">
+                                    </input>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <label>Nombre de Alimento</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="date"
+                                     placeholder="ID de Usuario">
+                                    </input>
+                                </div>
+
+                                <label>Calorí<aside> Calorías por Porción</aside></label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Calorías">
+                                    </input>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Estado</label>
+                                <div class="form-group">
+                                    <select class="form-select">                                    
+                                        <option selected>Michoacán</option>
+                                        <option>Ciudad de México</option>
+                                        <option>Querétaro</option>
+                                        <option>Jalisco</option>
+                                    </select>
+                                </div>
+
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <label>Ciudad</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Ciudad">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>C.P.</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="pincode"
+                                     placeholder="Código Postal">
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Descripción</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="multiline" rows=2
+                                     placeholder="Descripción del alimento">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>ID de Usuario</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="ID de Usuario" readonly="true">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Contraseña</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="password"
+                                     placeholder="Tu Contraseña" readonly="true">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Nueva </label>
+                                <div class="form-group">
+                                    <input class="form-control" type="password"
+                                     placeholder="Nueva Contraseña">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-secondary w-100">
+                                        Actualizar
+                                   </button>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+           
+            </div>    
+            <div class="col-md-7">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/usuario.png" width="100px" alt="imagen de usuario">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Tus Grupos de Alimentos</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>ID Alimento</th>
+                                                <th>Grupo</th>
+                                                <th>Porciones</th> 
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-primary w-100">
+                                        Ver Estadísticas
+                                   </button>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+           
+            </div>    
+            
+
+        </div>
+        
+
+    </div>
+</section>

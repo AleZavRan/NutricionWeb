@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\imgs\\estadisticas.jpg"
     },
     {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\food-management.jpg",
+      "PackagePath": "staticwebassets\\imgs\\food-management.jpg"
+    },
+    {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\inventario-alimentos.png",
       "PackagePath": "staticwebassets\\imgs\\inventario-alimentos.png"
     },
