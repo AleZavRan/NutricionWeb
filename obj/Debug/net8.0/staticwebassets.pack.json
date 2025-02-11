@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\imgs\\logo.png"
     },
     {
+      "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\plato_del_buen_comer.jpg",
+      "PackagePath": "staticwebassets\\imgs\\plato_del_buen_comer.jpg"
+    },
+    {
       "Id": "C:\\Users\\zaval\\Documents\\ProyectosWeb\\WebNutrition\\wwwroot\\imgs\\progreso.jpg",
       "PackagePath": "staticwebassets\\imgs\\progreso.jpg"
     },

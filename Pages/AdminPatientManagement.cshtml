@@ -1,0 +1,238 @@
+@page
+@model AdminPatientManagementModel
+@{
+    ViewData["Title"] = "Admin Patient Management";
+}
+
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/usuario.png" width="100px" alt="imagen de usuario">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Detalles del Paciente</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Nombre Completo</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                        placeholder="Nombre">
+                                        </input>
+                                        <button type="submit" asp-page-handler="RunServerCode" 
+                                        class="btn btn-primary">
+                                        Buscar
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <label>Número de celular</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="number"
+                                     placeholder="Tu número" readonly="true">
+                                    </input>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <label>Estatus de Cuenta</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                        placeholder="Estado">
+                                        </input>
+                                        <button type="submit" asp-page-handler="RunServerCode" 
+                                        class="btn btn-success">
+                                        <i class="fas fa-check-circle"></i>
+                                        </button>
+                                        <button type="submit" asp-page-handler="RunServerCode" 
+                                        class="btn btn-primary">
+                                        <i class="far fa-pause-circle"></i>
+                                        </button>
+                                        <button type="submit" asp-page-handler="RunServerCode" 
+                                        class="btn btn-danger">
+                                        <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <label>Correo Electrónico</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Dirección de correo" readonly="true">
+                                    </input>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>ID de Usuario</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="ID de Usuario" readonly="true">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Fecha de Nacimiento</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="date"
+                                     placeholder="Nacimiento" readonly="true">
+                                    </input>
+                                </div>
+                            </div>
+                         
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Estado</label>
+                                <div class="form-group">
+                                    <select class="form-select">                                    
+                                        <option selected readonly="true">Michoacán</option>
+                                        <option>Ciudad de México</option>
+                                        <option>Querétaro</option>
+                                        <option>Jalisco</option>
+                                    </select>
+                                </div>
+
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <label>Ciudad</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Ciudad" readonly="true">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>C.P.</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="pincode"
+                                     placeholder="Código Postal" readonly="true">
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Frase</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="multiline" rows=2 readonly="true"
+                                     placeholder="Tu Frase, si esto fuera un reality de nutrición">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-danger w-100">
+                                        Eliminar
+                                   </button>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+           
+            </div>    
+            <div class="col-md-7">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/usuario.png" width="100px" alt="imagen de usuario">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Tus Pacientes</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>ID Usuario</th>
+                                                <th>Grupo</th>
+                                                <th>Porciones</th> 
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-primary w-100">
+                                        Ver Estadísticas
+                                   </button>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+           
+            </div>    
+            
+
+        </div>
+        
+
+    </div>
+</section>

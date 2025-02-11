@@ -1,0 +1,73 @@
+@page
+@model FoodInventoryModel
+@{
+    ViewData["Title"] = "Admin Food Management";
+}
+
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Lista de Alimentos</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Alimento</th>
+                                                <th>Grupo A.</th>
+                                                <th>CantidadxPorción</th>
+                                                <th>CaloríasxPorción</th> 
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-primary w-100">
+                                        Ver Todos
+                                   </button>
+                                </div>
+                                <br>
+                                
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+
+               <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+            </div>    
+            
+
+        </div>
+        
+
+    </div>
+</section>
