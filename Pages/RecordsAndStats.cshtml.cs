@@ -3,18 +3,18 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebNutrition.Pages
 {
-    public class FoodRecorderModel : PageModel
+    public class RecordsAndStatsModel : PageModel
     {
-        private readonly ILogger<FoodRecorderModel> _logger;
+        private readonly ILogger<RecordsAndStatsModel> _logger;
 
-        public FoodRecorderModel(ILogger<FoodRecorderModel> logger)
+        public RecordsAndStatsModel(ILogger<RecordsAndStatsModel> logger)
         {
             _logger = logger;
         }
 
         public void OnGet()
         {
-
         }
     }
+
 }

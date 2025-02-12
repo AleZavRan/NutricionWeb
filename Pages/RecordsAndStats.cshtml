@@ -1,146 +1,22 @@
 @page
-@model FoodRecorderModel
+@model RecordsAndStatsModel
 @{
-    ViewData["Title"] = "Food Recorder";
+    ViewData["Title"] = "Admin Diet Management";
 }
 
 
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
-
-                <div class="card">
-                    <div class="card-body">
-
-                        <div class="row">
-                            <div class="col text-center">
-                                <h4>Agregar Alimento</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <img src="~/imgs/plato_del_buen_comer.jpg" width="100px" alt="imagen de usuario">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Alimento</label>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input class="form-control" type="text"
-                                        placeholder="Alimento">
-                                        </input>
-                                        <button type="submit" asp-page-handler="RunServerCode" 
-                                        class="btn btn-primary">
-                                        Buscar
-                                        </button>
-                                    </div>     
-                                </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <span>Alimento: </span>
-                                <label for="nombre">Nombre</label>
-                            </div>
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Grupo</label>
-                                <div class="form-group">
-                                    <select class="form-select">                                    
-                                        <option selected>Desayuno</option>
-                                        <option>Comida</option>
-                                        <option>Cena</option>
-                                        <option>Colación</option>                                            
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Porciones</label>
-                                <div class="form-group">
-                                    <input class="form-control" type="text"
-                                     placeholder="Porciones">
-                                    </input>
-                                </div>
-                            
-                            </div>
-                        </div>
-                        <div class="row">
-                            
-                            <div class="col-md-6">
-                                <label>Hora de comida</label>
-                                <div class="form-group">
-                                    <input class="form-control" type="time"
-                                     placeholder="Hora">
-                                    </input>
-                                </div>
                 
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <label>Notas</label>
-                                <div class="form-group">
-                                    <input class="form-control" type="multiline" rows=2
-                                     placeholder="Notas">
-                                    </input>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <button type="submit" asp-page-handler="RunServerCode" 
-                                    class="btn btn-lg w-100 btn-success">
-                                        Agrega
-                                   </button>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <button type="submit" asp-page-handler="RunServerCode" 
-                                    class="btn btn-lg w-100 btn-secondary">
-                                        Actualiza
-                                   </button>
-                                </div>
-                                <br>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <button type="submit" asp-page-handler="RunServerCode" 
-                                    class="btn btn-lg w-100 btn-danger">
-                                        Borra
-                                   </button>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
-                <br><br>
-           
-            </div>    
-            <div class="col-md-8">
+            <div class="col-md-7">
 
                 <div class="card">
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col text-center">
-                                <h5>Desayuno</h5>
+                                <h4>Lista de Alimentos</h4>
                             </div>
                         </div>
                         <div class="row">
@@ -188,7 +64,141 @@
 
                
             </div>    
-            
+            <div class="col-md-5">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <h4>Detalles de Grupo Alimenticio</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="~/imgs/plato_del_buen_comer.jpg" width="100px" alt="imagen de usuario">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>ID de grupo</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                        placeholder="ID de grupo">
+                                        </input>
+                                        <button type="submit" asp-page-handler="RunServerCode" 
+                                        class="btn btn-primary">
+                                        Buscar
+                                        </button>
+                                    </div>     
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <span>Paciente: </span>
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Grupo Alimenticio</label>
+                                <div class="form-group">
+                                    <select class="form-select">                                    
+                                        <option selected>Frutas</option>
+                                        <option>Verduras</option>
+                                        <option>Legumbres</option>
+                                        <option>Cereales</option>                                            
+                                        <option>Grasas</option>
+                                       <option>Origen Animal</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>P. Desayuno</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Desayuno">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Porción Comida</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Comida">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Porción Cena</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="text"
+                                     placeholder="Cena">
+                                    </input>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label>Detalles</label>
+                                <div class="form-group">
+                                    <input class="form-control" type="multiline" rows=2
+                                     placeholder="Detalles e Indicaciones">
+                                    </input>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-lg w-100 btn-success">
+                                        Agrega
+                                   </button>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-lg w-100 btn-secondary">
+                                        Actualiza
+                                   </button>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <button type="submit" asp-page-handler="RunServerCode" 
+                                    class="btn btn-lg w-100 btn-danger">
+                                        Borra
+                                   </button>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-area="" asp-page="/Index">Regresa al inicio</a>
+                <br><br>
+           
+            </div>
 
         </div>
         
