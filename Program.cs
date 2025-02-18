@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using WebNutrition.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//Add DbContext with connection string
+builder.Services.AddDbContext<WebNutritionDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
